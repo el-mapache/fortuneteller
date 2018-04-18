@@ -1,5 +1,5 @@
 {
-  "name": "fortuneteller",
+  "name": "soothsayer",
   "version": "1.0.0",
   "description": "casting stones//rolling bones",
   "main": "dist/build.js",
