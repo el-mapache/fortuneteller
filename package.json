@@ -1,6 +1,6 @@
 {
   "name": "soothsayer",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "casting stones//rolling bones",
   "main": "dist/build.js",
   "keywords": [
@@ -8,6 +8,10 @@
   ],
   "scripts": {
     "test": "npx babel-node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url":  "https://github.com/el-mapache/fortuneteller.git"
   },
   "author": "el-mapache",
   "license": "ISC",

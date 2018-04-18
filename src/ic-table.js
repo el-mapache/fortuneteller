@@ -265,16 +265,3 @@ export {
 };
 
 
-/**
-  *
-  * How to use:
-  *
-  * Generate a sequence of hexagrams. Pick several ranges of values. Map the value of
-  * the hexagram to the corresponding range, and then assign some value to the range.
-  * For example, pitches:
-  *
-  * 1-8: C
-  * 9-16: D
-  * 17-24: E
-  * ...and so on...
-**/
