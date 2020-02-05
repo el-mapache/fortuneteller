@@ -30,7 +30,7 @@
  * However, when a second hexagram is derived from the original, the 'changing' lines
  * will always be evaluated as their opposite:
  * a changing line representing an unbroken line will become broken.
- * Unchanging lines, of course, remain the same in the.
+ * Unchanging lines, of course, remain the same.
  *
  *
  *
@@ -40,7 +40,7 @@
  * There are several ways to derive a hexagram, and this implementation will use
  * the three coin method e.g. a coin is flipped three times to determine the line type.
  * Each series of three flips is known as a 'cast'. The outcome of the first cast
- * will the bottom line of the hexagram. 5 more casts follow, building the hexagram
+ * will form the bottom line of the hexagram. 5 more casts follow, building the hexagram
  * from the bottom up.
  *
  * The following values are assigned for each flip:
@@ -100,7 +100,6 @@ const COIN_FLIP_HEADS_VALUE = 3;
 const COIN_FLIP_TAILS_VALUE = 2;
 
 const MAX_HEXAGRAM_LINES = 6;
-
 /**
  * Hexagram table, according to the I Ching.
  *
@@ -258,10 +257,8 @@ function resolveHexagram(hexagram) {
   return hexagrams[matchIndex][1];
 }
 
-export {
+module.exports = {
   generateHexagram,
   generateSecondaryHexagram,
   resolveHexagram
 };
-
-

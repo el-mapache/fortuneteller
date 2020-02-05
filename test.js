@@ -1,10 +1,12 @@
-var ictable = require('./src/ic-table');
+var ictable = require('./dist/build.js');
 var hexagram1 = [7, 7, 7, 7, 7, 7];
 var primaryHexagram = [7,7,7,7,6,9];
-
+console.log(ictable)
 function expect(description = '', actual, expected) {
   var msg = `Expected value of ${expected} and got ${actual}`;
-  
+
+  console.log('Expecting '+ description);
+
   if (actual === expected) {
     console.log('Test passed');
   } else {

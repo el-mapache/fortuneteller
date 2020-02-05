@@ -1,5 +1,4 @@
 import path from 'path';
-import webpack from 'webpack';
 
 export default {
   mode: 'development',
@@ -7,6 +6,8 @@ export default {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'build.js',
+    libraryTarget: 'umd',
+    globalObject: "typeof self !== 'undefined' ? self : this"
   },
   resolve: {
     modules: [path.resolve(__dirname, 'src'), './node_modules'],
